@@ -5,7 +5,7 @@ export function loadUser(id) {
   return JSON.parse(data);
 }
 
-// eslint-disable-next-line no-unused-vars
-export function saveUser(user) {
-  throw new Error('Unimplemented');
-}
+// eslint disable next line no unused vars
+// export function saveUser( user ) {
+//   throw new Error('Unimplemented');
+// }
