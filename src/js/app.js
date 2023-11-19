@@ -5,6 +5,8 @@ console.log('worked');
 
 console.log(sum([1, 2]));
 
+//=======================================================================
+//входящие данные
 // const character = {
 //   name: 'Лучник',
 //   type: 'Bowman',
@@ -28,12 +30,12 @@ console.log(sum([1, 2]));
 //   ]
 // }
 
-export default function showDescription({ special: [...restObj] }) {
-  for (let i = 0; i <= restObj.length - 1; i++) {
-    if (!('description' in restObj[i])) {
-      restObj[i].description = 'Описание недоступно';
+export default function showDescription({ special: [...restObj] }) {//деструктурирующий процес и рест аргумент
+  for (let i = 0; i <= restObj.length - 1; i++) {//в каждом объекте из двух
+    if (!('description' in restObj[i])) {//если такого свойства не наблюдаем то
+      restObj[i].description = 'Описание недоступно';//устанавливаем своё описание
     }
   }
   console.log(restObj)
-  return restObj;
+  return restObj;//на выходе массив с двумя объектами)
 }

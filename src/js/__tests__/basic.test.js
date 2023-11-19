@@ -5,8 +5,8 @@ test('should sum', () => {
 
   expect(result).toBe(6);
 });
-
-import showDescription from '../app';+
+//=================================================
+import showDescription from '../app';
 
 test('check description', () => {
 
@@ -49,3 +49,4 @@ test('check description', () => {
     },
   ]);
 });
+//======================Всем спасибо !!!==================================
